@@ -15,23 +15,31 @@ public class ControlScheme : BaseCharacterController
     public virtual void SetInput(GameControls c)
     {
         controls = c;
+        AddInput();
 
     }
 
-    public virtual void AddInput()
-    {
-
-    }
+    public virtual void AddInput() {}
 
     public virtual void OnMove(InputAction.CallbackContext ctx)
     {
-        moveInput = ctx.ReadValue<Vector2>();
-        Orient();
+        moveInput = ctx.ReadValue<Vector2>();   //setting the move input
+        Orient();   
     }
+
+    protected override void HandleInput() {    }
 
     //Orient makes your character move relative to where the camera is facing
+    //Orient means to make something face the right direction
     public void Orient()
     {
-
+        moveDirection = new Vector3()
+        {
+            x = moveInput.x,
+            y = 0,
+            z = moveInput.y
+        };
+        moveDirection = moveDirection.relativeTo(Camera.main.transform);
     }
+
 }
