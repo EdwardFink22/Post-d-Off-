@@ -27,6 +27,11 @@ public class ControlScheme : BaseCharacterController
         Orient();   
     }
 
+    protected virtual void OnJump(InputAction.CallbackContext ctx)
+    {
+        jump = ctx.performed;
+    }
+
     protected override void HandleInput() {    }
 
     //Orient makes your character move relative to where the camera is facing

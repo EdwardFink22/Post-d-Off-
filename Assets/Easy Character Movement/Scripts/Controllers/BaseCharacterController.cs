@@ -904,8 +904,10 @@ namespace ECM.Controllers
         {
             // Cache components
 
-            movement = GetComponent<CharacterMovement>();
-            movement.platformUpdatesRotation = true;
+            if (!movement)
+            {
+                SetCharacterMovement(GetComponent<CharacterMovement>());
+            }
 
             animator = GetComponentInChildren<Animator>();
 
@@ -953,5 +955,11 @@ namespace ECM.Controllers
         }
         
         #endregion
+
+        public void SetCharacterMovement(CharacterMovement cm)
+        {
+            movement = cm;
+            movement.platformUpdatesRotation = true;
+        }
     }
 }
