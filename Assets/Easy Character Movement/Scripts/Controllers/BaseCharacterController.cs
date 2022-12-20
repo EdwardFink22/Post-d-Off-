@@ -776,19 +776,15 @@ namespace ECM.Controllers
             // move without acceleration / deceleration, let the animation takes full control
 
             var desiredVelocity = CalcDesiredVelocity();
+            Debug.Log(desiredVelocity.magnitude);
 
-            if (useRootMotion && applyRootMotion)
-                movement.Move(desiredVelocity, speed, !allowVerticalMovement);
-            else
-            {
-                // Move with acceleration and friction
+            // Move with acceleration and friction
 
-                var currentFriction = isGrounded ? groundFriction : airFriction;
-                var currentBrakingFriction = useBrakingFriction ? brakingFriction : currentFriction;
+            var currentFriction = isGrounded ? groundFriction : airFriction;
+            var currentBrakingFriction = useBrakingFriction ? brakingFriction : currentFriction;
 
-                movement.Move(desiredVelocity, speed, acceleration, deceleration, currentFriction,
-                    currentBrakingFriction, !allowVerticalMovement);
-            }
+            movement.Move(desiredVelocity, speed, acceleration, deceleration, currentFriction,
+            currentBrakingFriction, !allowVerticalMovement);
 
             // Jump logic
             

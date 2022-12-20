@@ -26,7 +26,7 @@ public class Controls_Player : ControlScheme
 
     public void OnRun(InputAction.CallbackContext ctx)
     {
-        isRunning = ctx.performed;
+        isRunning = ctx.started;       
     }
 
 
@@ -40,7 +40,40 @@ public class Controls_Player : ControlScheme
 
         // else, convert input (moveDirection) to velocity vector
         float multiplier = isRunning ? runMultiplier : 1;
+       
         return moveDirection * speed * multiplier;
+    }
+
+    protected override void Move()
+    {
+        // Apply movement
+
+        // If using root motion and root motion is being applied (eg: grounded),
+        // move without acceleration / deceleration, let the animation takes full control
+
+        var desiredVelocity = CalcDesiredVelocity();
+        Debug.Log(desiredVelocity.magnitude);
+
+        // Move with acceleration and friction
+
+        var currentFriction = isGrounded ? groundFriction : airFriction;
+        var currentBrakingFriction = useBrakingFriction ? brakingFriction : currentFriction;
+
+        float multiplier = isRunning ? runMultiplier : 1;
+
+        movement.Move(desiredVelocity, speed * multiplier, acceleration, deceleration, currentFriction,
+        currentBrakingFriction, !allowVerticalMovement);
+
+        // Jump logic
+
+        Jump();
+        MidAirJump();
+        UpdateJumpTimer();
+
+        // Update root motion state,
+        // should animator root motion be enabled? (eg: is grounded)
+
+        applyRootMotion = useRootMotion && movement.isGrounded;
     }
 
     protected override void Animate()
