@@ -3,7 +3,22 @@ guid: 84562abf00df64711a3379412ee078cc
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bark_Branch_Mat
+    second: {fileID: 2100000, guid: ccc2611c95d47489f9bae6b722da8009, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cap_Branch_Mat
+    second: {fileID: 2100000, guid: 53eb034c4d74e46f2bc4581910915210, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: conifer_macedonian_pine_Leaf_Mat
+    second: {fileID: 2100000, guid: 7a87729c85eaa4978b8b27fabc51558c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -85,7 +100,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.006
+    globalScale: 0.6
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
