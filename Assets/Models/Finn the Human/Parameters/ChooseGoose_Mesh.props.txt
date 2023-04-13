@@ -1,0 +1,26 @@
+Materials[1] =
+{
+    Materials[0] = Material3'/Game/Panda_Main/Characters/Finn/Submeshes/ChooseGoose/ChooseGoose_MAT.ChooseGoose_MAT'
+}
+SourceModels[0] = {}
+StaticMaterials[1] =
+{
+    StaticMaterials[0] =
+    {
+        MaterialInterface = Material3'/Game/Panda_Main/Characters/Finn/Submeshes/ChooseGoose/ChooseGoose_MAT.ChooseGoose_MAT'
+        MaterialSlotName = ChooseGoose_MAT
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 890.749, 1203.8, 0, 0 }
+        }
+    }
+}
+Sockets[0] = {}
+ExtendedBounds =
+{
+    Origin = { X=-16.2177, Y=12.3221, Z=135.072 }
+    BoxExtent = { X=163.958, Y=111.508, Z=136.23 }
+    SphereRadius = 223.923
+}

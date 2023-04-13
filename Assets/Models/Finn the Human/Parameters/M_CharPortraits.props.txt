@@ -1,0 +1,111 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[1] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/Panda_Main/Playgrounds/CPerthuis/VFXMaterials/White.White'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[14] =
+                {
+                    ParameterInfos[0] = { Name=TopLeft_X }
+                    ParameterInfos[1] = { Name=TopRight_Y }
+                    ParameterInfos[2] = { Name=EdgeFalloff }
+                    ParameterInfos[3] = { Name=Zoom }
+                    ParameterInfos[4] = { Name=ZeroCoord }
+                    ParameterInfos[5] = { Name=BottomLeft_Y }
+                    ParameterInfos[6] = { Name=OneCoord }
+                    ParameterInfos[7] = { Name=BottomRight_Y }
+                    ParameterInfos[8] = { Name=BottomRight_X }
+                    ParameterInfos[9] = { Name=YOffset }
+                    ParameterInfos[10] = { Name=BottomLeft_X }
+                    ParameterInfos[11] = { Name=TopRight_X }
+                    ParameterInfos[12] = { Name=TopLeft_Y }
+                    ParameterInfos[13] = { Name=XOffset }
+                }
+            }
+            Entries[1] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=QuadColor }
+                }
+            }
+            Entries[2] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=Texture }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[14] = { 0, 0, 0.01, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0 }
+        VectorValues[1] =
+        {
+            VectorValues[0] = { R=0, G=0, B=0, A=0 }
+        }
+        TextureValues[1] =
+        {
+            TextureValues[0] = Texture2D'/Game/Panda_Main/Playgrounds/CPerthuis/VFXMaterials/White.White'
+        }
+    }
+    ReferencedTextures[1] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/Panda_Main/Playgrounds/CPerthuis/VFXMaterials/White.White'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[1] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/Panda_Main/Playgrounds/CPerthuis/VFXMaterials/White.White'
+        Name = Texture
+        Group = None
+    }
+}
+CollectedScalarParameters[14] =
+{
+    CollectedScalarParameters[0] = { Value=0, Name=TopLeft_X, Group=None }
+    CollectedScalarParameters[1] = { Value=0, Name=TopRight_Y, Group=None }
+    CollectedScalarParameters[2] = { Value=0.01, Name=EdgeFalloff, Group=None }
+    CollectedScalarParameters[3] = { Value=1, Name=Zoom, Group=None }
+    CollectedScalarParameters[4] = { Value=0, Name=ZeroCoord, Group=None }
+    CollectedScalarParameters[5] = { Value=1, Name=BottomLeft_Y, Group=None }
+    CollectedScalarParameters[6] = { Value=1, Name=OneCoord, Group=None }
+    CollectedScalarParameters[7] = { Value=1, Name=BottomRight_Y, Group=None }
+    CollectedScalarParameters[8] = { Value=1, Name=BottomRight_X, Group=None }
+    CollectedScalarParameters[9] = { Value=0, Name=YOffset, Group=None }
+    CollectedScalarParameters[10] = { Value=0, Name=BottomLeft_X, Group=None }
+    CollectedScalarParameters[11] = { Value=1, Name=TopRight_X, Group=None }
+    CollectedScalarParameters[12] = { Value=0, Name=TopLeft_Y, Group=None }
+    CollectedScalarParameters[13] = { Value=0, Name=XOffset, Group=None }
+}
+CollectedVectorParameters[1] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=0, G=0, B=0, A=0 }
+        Name = QuadColor
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

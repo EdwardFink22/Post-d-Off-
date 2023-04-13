@@ -1,0 +1,228 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[2] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/Panda_Main/UI/In-Game/States/UI_Debuff_ArmorBreak.UI_Debuff_ArmorBreak'
+    ReferencedTextures[1] = Texture2D'/Game/Panda_Main/UI/Prototype/Images/RewardIcons/Bars.Bars'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[19] =
+                {
+                    ParameterInfos[0] = { Name=TopLeft_X }
+                    ParameterInfos[1] = { Name=ClampOne }
+                    ParameterInfos[2] = { Name=TopRight_Y }
+                    ParameterInfos[3] = { Name=EdgeFalloff }
+                    ParameterInfos[4] = { Name=BarFalloff }
+                    ParameterInfos[5] = { Name=DeltaPercentage }
+                    ParameterInfos[6] = { Name=DeltaTextureVerticalTiles }
+                    ParameterInfos[7] = { Name=BottomLeft_Y }
+                    ParameterInfos[8] = { Name=BottomRight_Y }
+                    ParameterInfos[9] = { Name=BottomRight_X }
+                    ParameterInfos[10] = { Name=DeltaTextureHorizontalTiles }
+                    ParameterInfos[11] = { Name=Percentage }
+                    ParameterInfos[12] = { Name=BottomLeft_X }
+                    ParameterInfos[13] = { Name=TopRight_X }
+                    ParameterInfos[14] = { Name=ProgressSlantDeltaPercentage }
+                    ParameterInfos[15] = { Name=ShadowOpacity }
+                    ParameterInfos[16] = { Name=ProgressSlantPercentage }
+                    ParameterInfos[17] = { Name=ClampZero }
+                    ParameterInfos[18] = { Name=TopLeft_Y }
+                }
+            }
+            Entries[1] =
+            {
+                ParameterInfos[8] =
+                {
+                    ParameterInfos[0] = { Name=TexturedDeltaScrollSpeed }
+                    ParameterInfos[1] = { Name=DeltaFIllColor }
+                    ParameterInfos[2] = { Name=TextureColor }
+                    ParameterInfos[3] = { Name=LeftColor }
+                    ParameterInfos[4] = { Name=BackgroundColor }
+                    ParameterInfos[5] = { Name=OutlineColor }
+                    ParameterInfos[6] = { Name=FillColor }
+                    ParameterInfos[7] = { Name=RightColor }
+                }
+            }
+            Entries[2] =
+            {
+                ParameterInfos[2] =
+                {
+                    ParameterInfos[0] = { Name=DeltaTexture }
+                    ParameterInfos[1] = { Name=Texture }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[19] =
+        {
+            ScalarValues[0] = 0
+            ScalarValues[1] = 1
+            ScalarValues[2] = 0
+            ScalarValues[3] = 0.01
+            ScalarValues[4] = 0
+            ScalarValues[5] = 0.925
+            ScalarValues[6] = 1
+            ScalarValues[7] = 1
+            ScalarValues[8] = 1
+            ScalarValues[9] = 1
+            ScalarValues[10] = 1
+            ScalarValues[11] = 0.513095
+            ScalarValues[12] = 0
+            ScalarValues[13] = 1
+            ScalarValues[14] = 0
+            ScalarValues[15] = 0.6
+            ScalarValues[16] = 0
+            ScalarValues[17] = 0
+            ScalarValues[18] = 0
+        }
+        VectorValues[8] =
+        {
+            VectorValues[0] = { R=-1, G=0, B=0, A=0 }
+            VectorValues[1] = { R=0.339355, G=0.537393, B=0.723958, A=1 }
+            VectorValues[2] = { R=1, G=1, B=1, A=1 }
+            VectorValues[3] = { R=1, G=0.158961, B=0.064803, A=1 }
+            VectorValues[4] = { R=0.015209, G=0.061246, B=0.104616, A=1 }
+            VectorValues[5] = { R=0, G=0.101527, B=0.260417, A=1 }
+            VectorValues[6] = { R=0.64448, G=0.3564, B=0.015996, A=1 }
+            VectorValues[7] = { R=1, G=0.400449, B=0.000377, A=1 }
+        }
+        TextureValues[2] =
+        {
+            TextureValues[0] = Texture2D'/Game/Panda_Main/UI/Prototype/Images/RewardIcons/Bars.Bars'
+            TextureValues[1] = Texture2D'/Game/Panda_Main/UI/In-Game/States/UI_Debuff_ArmorBreak.UI_Debuff_ArmorBreak'
+        }
+    }
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/Panda_Main/UI/In-Game/States/UI_Debuff_ArmorBreak.UI_Debuff_ArmorBreak'
+        ReferencedTextures[1] = Texture2D'/Game/Panda_Main/UI/Prototype/Images/RewardIcons/Bars.Bars'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[2] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/Panda_Main/UI/Prototype/Images/RewardIcons/Bars.Bars'
+        Name = DeltaTexture
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/Panda_Main/UI/In-Game/States/UI_Debuff_ArmorBreak.UI_Debuff_ArmorBreak'
+        Name = Texture
+        Group = None
+    }
+}
+CollectedScalarParameters[19] =
+{
+    CollectedScalarParameters[0] = { Value=0, Name=TopLeft_X, Group=None }
+    CollectedScalarParameters[1] = { Value=1, Name=ClampOne, Group=None }
+    CollectedScalarParameters[2] = { Value=0, Name=TopRight_Y, Group=None }
+    CollectedScalarParameters[3] = { Value=0.01, Name=EdgeFalloff, Group=None }
+    CollectedScalarParameters[4] = { Value=0, Name=BarFalloff, Group=None }
+    CollectedScalarParameters[5] = { Value=0.925, Name=DeltaPercentage, Group=None }
+    CollectedScalarParameters[6] =
+    {
+        Value = 1
+        Name = DeltaTextureVerticalTiles
+        Group = None
+    }
+    CollectedScalarParameters[7] = { Value=1, Name=BottomLeft_Y, Group=None }
+    CollectedScalarParameters[8] = { Value=1, Name=BottomRight_Y, Group=None }
+    CollectedScalarParameters[9] = { Value=1, Name=BottomRight_X, Group=None }
+    CollectedScalarParameters[10] =
+    {
+        Value = 1
+        Name = DeltaTextureHorizontalTiles
+        Group = None
+    }
+    CollectedScalarParameters[11] = { Value=0.513095, Name=Percentage, Group=None }
+    CollectedScalarParameters[12] = { Value=0, Name=BottomLeft_X, Group=None }
+    CollectedScalarParameters[13] = { Value=1, Name=TopRight_X, Group=None }
+    CollectedScalarParameters[14] =
+    {
+        Value = 0
+        Name = ProgressSlantDeltaPercentage
+        Group = None
+    }
+    CollectedScalarParameters[15] = { Value=0.6, Name=ShadowOpacity, Group=None }
+    CollectedScalarParameters[16] =
+    {
+        Value = 0
+        Name = ProgressSlantPercentage
+        Group = None
+    }
+    CollectedScalarParameters[17] = { Value=0, Name=ClampZero, Group=None }
+    CollectedScalarParameters[18] = { Value=0, Name=TopLeft_Y, Group=None }
+}
+CollectedVectorParameters[8] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=-1, G=0, B=0, A=0 }
+        Name = TexturedDeltaScrollSpeed
+        Group = None
+    }
+    CollectedVectorParameters[1] =
+    {
+        Value = { R=0.339355, G=0.537393, B=0.723958, A=1 }
+        Name = DeltaFIllColor
+        Group = None
+    }
+    CollectedVectorParameters[2] =
+    {
+        Value = { R=1, G=1, B=1, A=1 }
+        Name = TextureColor
+        Group = None
+    }
+    CollectedVectorParameters[3] =
+    {
+        Value = { R=1, G=0.158961, B=0.064803, A=1 }
+        Name = LeftColor
+        Group = None
+    }
+    CollectedVectorParameters[4] =
+    {
+        Value = { R=0.015209, G=0.061246, B=0.104616, A=1 }
+        Name = BackgroundColor
+        Group = None
+    }
+    CollectedVectorParameters[5] =
+    {
+        Value = { R=0, G=0.101527, B=0.260417, A=1 }
+        Name = OutlineColor
+        Group = None
+    }
+    CollectedVectorParameters[6] =
+    {
+        Value = { R=0.64448, G=0.3564, B=0.015996, A=1 }
+        Name = FillColor
+        Group = None
+    }
+    CollectedVectorParameters[7] =
+    {
+        Value = { R=1, G=0.400449, B=0.000377, A=1 }
+        Name = RightColor
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

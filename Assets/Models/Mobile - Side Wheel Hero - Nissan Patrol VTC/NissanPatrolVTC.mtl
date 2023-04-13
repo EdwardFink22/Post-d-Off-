@@ -1,0 +1,62 @@
+# Blender MTL File: 'None'
+# Material Count: 5
+
+newmtl Flasher
+Ns 0.100000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd flare16.png
+map_d flare16.png
+
+newmtl mat_CarPlate
+Ns 199.999995
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd UAE_AD_1986.png
+map_d UAE_AD_1986.png
+
+newmtl tx_vtc_body_D
+Ns 199.999995
+Ka 1.000000 1.000000 1.000000
+Kd 0.588235 0.588235 0.588235
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd tx_vtc_body_D.png
+map_d tx_vtc_body_D.png
+
+newmtl tx_vtc_glass_DA
+Ns 199.999995
+Ka 1.000000 1.000000 1.000000
+Kd 0.760784 0.815686 0.823529
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd tx_vtc_glass_DA.png
+map_d tx_vtc_glass_DA.png
+
+newmtl tx_vtc_wheel_D
+Ns 199.999995
+Ka 1.000000 1.000000 1.000000
+Kd 0.588235 0.588235 0.588235
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd tx_vtc_wheel_D.png
+map_d tx_vtc_wheel_D.png

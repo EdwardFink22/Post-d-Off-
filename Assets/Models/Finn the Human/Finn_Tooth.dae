@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Centrixe</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.6;  Revision: 68</authoring_tool>
+    </contributor>
+    <created>2022-12-09T04:09:40</created>
+    <modified>2022-12-09T04:09:40</modified>
+    <unit name="inch" meter="0.0254"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="FinnBase_MIC">
+      <profile_COMMON>
+        <newparam sid="Finn_Base_D_png-surface">
+          <surface type="2D">
+            <init_from>Finn_Base_D_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Finn_Base_D_png-sampler">
+          <sampler2D>
+            <source>Finn_Base_D_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Finn_Base_D_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="FinnBase_MIC-material" name="FinnBase_MIC">
+      <instance_effect url="#FinnBase_MIC"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-Finn_Tooth" name="Finn_Tooth">
+      <mesh>
+        <source id="geom-Finn_Tooth-positions">
+          <float_array id="geom-Finn_Tooth-positions-array" count="126">-0.2187843 -2.300384 0.7675476 0.2987328 -1.729679 2.051819 -0.3158989 -1.725987 2.054138 0.40588 -2.303271 0.7647705 -0.1740952 -2.230312 -0.8223267 0.3766022 -0.8353567 0.8679504 0.348381 -0.7199281 2.458099 0.4509468 -2.234018 -0.8251343 0.4514694 -1.486673 -2.067993 -0.2782021 -1.478155 -2.065002 0.4055328 -0.7772129 -0.8401489 0.4205246 -0.5306083 -2.462128 -0.3622665 -0.5231137 -2.458801 0.3873482 0.5211484 -2.442444 -0.3949623 0.5290754 -2.439606 -0.3568077 1.475595 -2.015717 0.3774986 0.7796035 -0.8197632 0.3716507 1.466106 -2.017975 -0.2475243 2.213185 -0.7659912 0.3700027 0.8627317 0.8800964 0.3662186 0.7722242 2.459076 0.3226509 1.75741 2.061646 0.3763008 2.207617 -0.7681885 -0.2385979 2.303271 0.8020935 -0.291256 1.762517 2.063446 0.3850479 2.298405 0.7999268 -0.2782021 -1.478155 -2.065002 -0.4240036 -0.7803102 -0.8366089 -0.3622665 -0.5231137 -2.458801 -0.1740952 -2.230312 -0.8223267 -0.3949623 0.5290754 -2.439606 -0.4419212 -0.8417269 0.871521 -0.2187843 -2.300384 0.7675476 -0.3158989 -1.725987 2.054138 -0.4359818 -0.7249457 2.461426 -0.4514732 0.7777307 -0.8164978 -0.3568077 1.475595 -2.015717 -0.2475243 2.213185 -0.7659912 -0.4480209 0.8577666 0.8833923 -0.4177856 0.7684667 2.462158 -0.2385979 2.303271 0.8020935 -0.291256 1.762517 2.063446</float_array>
+          <technique_common>
+            <accessor source="#geom-Finn_Tooth-positions-array" count="42" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Finn_Tooth-normals">
+          <float_array id="geom-Finn_Tooth-normals-array" count="126">-0.6554925 -0.7467359 0.1127608 -0.661674 -0.6981199 0.2735253 -0.6493207 -0.7322152 -0.2055326 -0.6660012 -0.5153266 -0.5393338 -0.687695 -0.1627657 -0.7075188 -0.6931299 0.1561566 -0.7036946 -0.6750517 0.5141017 -0.5291547 -0.6539237 0.7300857 -0.1983904 -0.6513711 0.7490063 0.121265 -0.6526762 0.7046797 0.2782808 -0.6660012 -0.5153266 -0.5393338 -0.687695 -0.1627657 -0.7075188 -0.6493207 -0.7322152 -0.2055326 -0.6931299 0.1561566 -0.7036946 -0.6554925 -0.7467359 0.1127608 -0.661674 -0.6981199 0.2735253 -0.6750517 0.5141017 -0.5291547 -0.6539237 0.7300857 -0.1983904 -0.6513711 0.7490063 0.121265 -0.6526762 0.7046797 0.2782808 0.8022503 -0.5341805 0.2665437 0.6648408 -0.7283341 0.1658799 0.999617 0.005043855 0.02720656 0.9995611 -0.02566303 0.01479787 0.6668736 -0.7153378 -0.208738 0.6539288 -0.4874754 -0.5785714 0.9995246 0.02675364 0.01531991 0.6684798 -0.1213575 -0.7337623 0.6628684 0.1745495 -0.7281058 0.9999526 0.008768681 0.004238477 0.6432291 0.5116187 -0.5696513 0.9999359 0.002632685 0.01101046 0.9999245 0.0118936 0.003078162 0.8148505 0.528532 0.2380599 0.660596 0.7175225 -0.2208489 0.6699998 0.7295366 0.1373923 -0.9955092 -0.09145094 -0.02445366 -0.9967391 -0.08046282 -0.006077382 -0.9987767 -0.0479468 0.01209475 -0.9982532 0.05748758 -0.01362169 -0.9972654 0.07339023 0.008690925 -0.9977177 0.06359189 0.02270446</float_array>
+          <technique_common>
+            <accessor source="#geom-Finn_Tooth-normals-array" count="42" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Finn_Tooth-map0">
+          <float_array id="geom-Finn_Tooth-map0-array" count="126">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Finn_Tooth-map0-array" count="42" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Finn_Tooth-map1">
+          <float_array id="geom-Finn_Tooth-map1-array" count="126">0.05413818 0.9143677 0.9143677 0.04748535 0.9272461 0.9272461 0.05334473 0.9277954 0.9277954 0.04980469 0.9147339 0.9147339 0.05044556 0.9003906 0.9003906 0.03912354 0.9189453 0.9189453 0.04122925 0.9308472 0.9308472 0.04653931 0.9030151 0.9030151 0.03857422 0.8948975 0.8948975 0.04049683 0.8898926 0.8898926 0.03588867 0.9057007 0.9057007 0.03189087 0.8938599 0.8938599 0.03155518 0.8880005 0.8880005 0.02429199 0.8953247 0.8953247 0.0219574 0.8899536 0.8899536 0.01465607 0.8948975 0.8948975 0.02406311 0.9078369 0.9078369 0.01832581 0.8984985 0.8984985 0.009017944 0.9074097 0.9074097 0.02479553 0.9212646 0.9212646 0.02589417 0.9328003 0.9328003 0.01914978 0.9314575 0.9314575 0.01334381 0.9087524 0.9087524 0.00920105 0.9212646 0.9212646 0.01358032 0.9334106 0.9334106 0.01370239 0.9205933 0.9205933 0.1199341 0.864502 0.864502 0.1148682 0.8543701 0.8543701 0.112793 0.8666992 0.8666992 0.1264648 0.854126 0.854126 0.1044922 0.8668213 0.8668213 0.1154175 0.8409424 0.8409424 0.1269531 0.8416748 0.8416748 0.1209106 0.8306885 0.8306885 0.1149902 0.8291016 0.8291016 0.1021729 0.8544922 0.8544922 0.09735107 0.8647461 0.8647461 0.09075928 0.8546143 0.8546143 0.1011963 0.8411865 0.8411865 0.1012573 0.8294678 0.8294678 0.08984375 0.8422852 0.8422852 0.09533691 0.8312988 0.8312988</float_array>
+          <technique_common>
+            <accessor source="#geom-Finn_Tooth-map1-array" count="42" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Finn_Tooth-map2">
+          <float_array id="geom-Finn_Tooth-map2-array" count="126">0.6269531 0.7363281 0.7363281 0.5356445 0.9095459 0.9095459 0.6157227 0.916687 0.916687 0.5673828 0.7414551 0.7414551 0.5761719 0.5490723 0.5490723 0.4208984 0.7983398 0.7983398 0.4499512 0.9573669 0.9573669 0.5224609 0.5839844 0.5839844 0.4135742 0.4760742 0.4760742 0.4399414 0.4091797 0.4091797 0.376709 0.6206055 0.6206055 0.3220215 0.4619141 0.4619141 0.3171387 0.3837891 0.3837891 0.2175293 0.480957 0.480957 0.1855469 0.4091797 0.4091797 0.08532715 0.4755859 0.4755859 0.2143555 0.6494141 0.6494141 0.1356201 0.5236816 0.5236816 0.00806427 0.6435547 0.6435547 0.2243652 0.8289795 0.8289795 0.239624 0.9840088 0.9840088 0.1469727 0.9658508 0.9658508 0.06738281 0.661377 0.661377 0.01050568 0.8292236 0.8292236 0.07049561 0.9919357 0.9919357 0.07220459 0.8199463 0.8199463 0.8808594 0.4946289 0.4946289 0.8129883 0.3569336 0.3569336 0.784668 0.5234375 0.5234375 0.9697266 0.3544922 0.3544922 0.6723633 0.5244141 0.5244141 0.8203125 0.1762695 0.1762695 0.9755859 0.1850586 0.1850586 0.8935547 0.03808594 0.03808594 0.8139648 0.01660156 0.01660156 0.6420898 0.3588867 0.3588867 0.5766602 0.496582 0.496582 0.4880371 0.3598633 0.3598633 0.628418 0.1796875 0.1796875 0.6289063 0.02148437 0.02148437 0.4755859 0.1938477 0.1938477 0.5493164 0.04638672 0.04638672</float_array>
+          <technique_common>
+            <accessor source="#geom-Finn_Tooth-map2-array" count="42" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Finn_Tooth-vertices">
+          <input semantic="POSITION" source="#geom-Finn_Tooth-positions"/>
+        </vertices>
+        <triangles material="FinnBase_MIC" count="54">
+          <input semantic="VERTEX" source="#geom-Finn_Tooth-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Finn_Tooth-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-Finn_Tooth-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Finn_Tooth-map1" offset="3" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Finn_Tooth-map2" offset="4" set="1"/>
+          <p>0 0 0 0 0 1 20 1 1 1 2 1 2 2 2 1 20 1 1 1 0 0 0 0 0 3 21 3 3 3 4 2 4 4 4 3 21 3 3 3 0 0 0 0 0 5 22 5 5 5 1 20 1 1 1 3 21 3 3 3 1 20 1 1 1 5 22 5 5 5 6 23 6 6 6 3 21 3 3 3 4 2 4 4 4 7 24 7 7 7 5 22 5 5 5 3 21 3 3 3 7 24 7 7 7 4 2 4 4 4 8 25 8 8 8 7 24 7 7 7 8 25 8 8 8 4 2 4 4 4 9 3 9 9 9 5 22 5 5 5 7 24 7 7 7 10 26 10 10 10 8 25 8 8 8 10 26 10 10 10 7 24 7 7 7 9 3 9 9 9 11 27 11 11 11 8 25 8 8 8 10 26 10 10 10 8 25 8 8 8 11 27 11 11 11 11 27 11 11 11 9 3 9 9 9 12 4 12 12 12 12 4 12 12 12 13 28 13 13 13 11 27 11 11 11 13 28 13 13 13 10 26 10 10 10 11 27 11 11 11 13 28 13 13 13 12 4 12 12 12 14 5 14 14 14 15 6 15 15 15 13 28 13 13 13 14 5 14 14 14 10 26 10 10 10 13 28 13 13 13 16 29 16 16 16 16 29 16 16 16 5 22 5 5 5 10 26 10 10 10 13 28 13 13 13 15 6 15 15 15 17 30 17 17 17 17 30 17 17 17 16 29 16 16 16 13 28 13 13 13 18 7 18 18 18 17 30 17 17 17 15 6 15 15 15 5 22 5 5 5 16 29 16 16 16 19 31 19 19 19 19 31 19 19 19 6 23 6 6 6 5 22 5 5 5 6 23 6 6 6 19 31 19 19 19 20 32 20 20 20 19 31 19 19 19 21 33 21 21 21 20 32 20 20 20 22 34 22 22 22 16 29 16 16 16 17 30 17 17 17 17 30 17 17 17 18 7 18 18 18 22 34 22 22 22 22 34 22 22 22 19 31 19 19 19 16 29 16 16 16 23 8 23 23 23 22 34 22 22 22 18 7 18 18 18 21 33 21 21 21 23 8 23 23 23 24 9 24 24 24 19 31 19 19 19 22 34 22 22 22 25 35 25 25 25 21 33 21 21 21 19 31 19 19 19 25 35 25 25 25 22 34 22 22 22 23 8 23 23 23 25 35 25 25 25 23 8 23 23 23 21 33 21 21 21 25 35 25 25 25 26 10 26 26 26 27 36 27 27 27 28 11 28 28 28 27 36 27 27 27 26 10 26 26 26 29 12 29 29 29 27 36 27 27 27 30 13 30 30 30 28 11 28 28 28 29 12 29 29 29 31 37 31 31 31 27 36 27 27 27 31 37 31 31 31 29 12 29 29 29 32 14 32 32 32 32 14 32 32 32 33 15 33 33 33 31 37 31 31 31 31 37 31 31 31 33 15 33 33 33 34 38 34 34 34 30 13 30 30 30 27 36 27 27 27 35 39 35 35 35 27 36 27 27 27 31 37 31 31 31 35 39 35 35 35 30 13 30 30 30 35 39 35 35 35 36 16 36 36 36 36 16 36 36 36 35 39 35 35 35 37 17 37 37 37 34 38 34 34 34 38 40 38 38 38 31 37 31 31 31 35 39 35 35 35 31 37 31 31 31 38 40 38 38 38 35 39 35 35 35 38 40 38 38 38 37 17 37 37 37 38 40 38 38 38 34 38 34 34 34 39 41 39 39 39 37 17 37 37 37 38 40 38 38 38 40 18 40 40 40 41 19 41 41 41 38 40 38 38 38 39 41 39 39 39 38 40 38 38 38 41 19 41 41 41 40 18 40 40 40</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="Finn_Base_D_png">
+      <init_from>./Finn_Base_D.png</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-Finn_Tooth" name="Finn_Tooth">
+        <instance_geometry url="#geom-Finn_Tooth">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="FinnBase_MIC" target="#FinnBase_MIC-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>

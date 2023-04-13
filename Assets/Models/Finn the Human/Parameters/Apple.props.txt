@@ -1,0 +1,26 @@
+Materials[1] =
+{
+    Materials[0] = Material3'/Game/Panda_Main/Characters/Finn/Submeshes/Finn_Apple_D_Mat.Finn_Apple_D_Mat'
+}
+SourceModels[0] = {}
+StaticMaterials[1] =
+{
+    StaticMaterials[0] =
+    {
+        MaterialInterface = Material3'/Game/Panda_Main/Characters/Finn/Submeshes/Finn_Apple_D_Mat.Finn_Apple_D_Mat'
+        MaterialSlotName = lambert2
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 49.868, 39.5113, 0, 0 }
+        }
+    }
+}
+Sockets[0] = {}
+ExtendedBounds =
+{
+    Origin = { X=-0.0277157, Y=-1.84246, Z=0.2271 }
+    BoxExtent = { X=8.77545, Y=10.1224, Z=9.79099 }
+    SphereRadius = 12.42
+}

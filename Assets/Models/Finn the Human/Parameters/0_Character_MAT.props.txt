@@ -1,0 +1,513 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[8] =
+{
+    ReferencedTextures[0] = Texture2D'/Engine/EngineMaterials/Good64x64TilingNoiseHighFreq.Good64x64TilingNoiseHighFreq'
+    ReferencedTextures[1] = Texture2D'/Game/Panda_Main/Characters/Garnet/Materials/Garnet_Body_Masks.Garnet_Body_Masks'
+    ReferencedTextures[2] = Texture2D'/Game/Panda_Main/Characters/T_Black.T_Black'
+    ReferencedTextures[3] = Texture2D'/Game/Panda_Main/Characters/T_BlacknoSRGB.T_BlacknoSRGB'
+    ReferencedTextures[4] = Texture2D'/Game/Panda_Main/Characters/T_DefaltNM.T_DefaltNM'
+    ReferencedTextures[5] = Texture2D'/Game/Panda_Main/Characters/T_DefaultChecker.T_DefaultChecker'
+    ReferencedTextures[6] = Texture2D'/Game/Panda_Main/Materials/AdvancedFresnelSegment/textures/texNP.texNP'
+    ReferencedTextures[7] = Texture2D'/Game/Panda_Main/VFX/Textures/T_Noise_Contrast_High_Blurry.T_Noise_Contrast_High_Blurry'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[46] =
+                {
+                    ParameterInfos[0] = { Name=BaseColor_Power }
+                    ParameterInfos[1] = { Name=Fresnel }
+                    ParameterInfos[2] = { Name=UI_IntensityRim }
+                    ParameterInfos[3] = { Name=Metallic_Power }
+                    ParameterInfos[4] = { Name=maxAngle }
+                    ParameterInfos[5] = { Name=Emissive_ScrollU }
+                    ParameterInfos[6] = { Name=bias }
+                    ParameterInfos[7] = { Name=Desaturation }
+                    ParameterInfos[8] = { Name=Normal_Strength }
+                    ParameterInfos[9] = { Name=OpacityToggle }
+                    ParameterInfos[10] = { Name=Specular }
+                    ParameterInfos[11] = { Name=AmbientOcclusion_Mult }
+                    ParameterInfos[12] = { Name=InvertNormalsAlpha }
+                    ParameterInfos[13] = { Name=Emissive_Color_Mult }
+                    ParameterInfos[14] = { Name=AmbientOcclusion_Power }
+                    ParameterInfos[15] = { Name=Gradient_Curve }
+                    ParameterInfos[16] = { Name=Emissive_ScrollV }
+                    ParameterInfos[17] = { Name=Roughness_Power }
+                    ParameterInfos[18] = { Name=HueShift }
+                    ParameterInfos[19] = { Name=Emissive_OffsetV }
+                    ParameterInfos[20] = { Name=UseEvadeSine }
+                    ParameterInfos[21] = { Name=UI_bias }
+                    ParameterInfos[22] = { Name=UI_minAngle }
+                    ParameterInfos[23] = { Name=IntensityRim }
+                    ParameterInfos[24] = { Name=Emissive_OffsetU }
+                    ParameterInfos[25] = { Name=EvadeBlink }
+                    ParameterInfos[26] = { Name=EvadeFresnel }
+                    ParameterInfos[27] = { Name=GlowOpacity }
+                    ParameterInfos[28] = { Name=ColorMap }
+                    ParameterInfos[29] = { Name=Glow }
+                    ParameterInfos[30] = { Name=Emissive_Power }
+                    ParameterInfos[31] = { Name=Emissive_Mult }
+                    ParameterInfos[32] = { Name=ColorMap_Mult }
+                    ParameterInfos[33] = { Name=minAngle }
+                    ParameterInfos[34] = { Name=AmbientOcclusion_Contrast }
+                    ParameterInfos[35] = { Name=Rimlight_Mode }
+                    ParameterInfos[36] = { Name=DepthOffset }
+                    ParameterInfos[37] = { Name=eta }
+                    ParameterInfos[38] = { Name=Emissive_ScaleV }
+                    ParameterInfos[39] = { Name=UI_eta }
+                    ParameterInfos[40] = { Name=Metallic_Mult }
+                    ParameterInfos[41] = { Name=BaseColor_Mult }
+                    ParameterInfos[42] = { Name=Emissive_ScaleU }
+                    ParameterInfos[43] = { Name=UI_maxAngle }
+                    ParameterInfos[44] = { Name=Team }
+                    ParameterInfos[45] = { Name=Roughness_Mult }
+                }
+            }
+            Entries[1] =
+            {
+                ParameterInfos[22] =
+                {
+                    ParameterInfos[0] = { Name=ColorDamageStart }
+                    ParameterInfos[1] = { Name=Color4 }
+                    ParameterInfos[2] = { Name=EvadeColor }
+                    ParameterInfos[3] = { Name=Team_LightGreen }
+                    ParameterInfos[4] = { Name=Team_Yellow }
+                    ParameterInfos[5] = { Name=Team_DarkGreen }
+                    ParameterInfos[6] = { Name=Emissive_Color }
+                    ParameterInfos[7] = { Name=Original }
+                    ParameterInfos[8] = { Name=Team_Blue }
+                    ParameterInfos[9] = { Name=Team_Black }
+                    ParameterInfos[10] = { Name=Team_Purple }
+                    ParameterInfos[11] = { Name=Color2 }
+                    ParameterInfos[12] = { Name=GlowColor }
+                    ParameterInfos[13] = { Name=UI_ColorRim }
+                    ParameterInfos[14] = { Name=Color }
+                    ParameterInfos[15] = { Name=Color3 }
+                    ParameterInfos[16] = { Name=Team_Green }
+                    ParameterInfos[17] = { Name=Team_Red }
+                    ParameterInfos[18] = { Name=Team_Orange }
+                    ParameterInfos[19] = { Name=BaseColor }
+                    ParameterInfos[20] = { Name=Team_Pink }
+                    ParameterInfos[21] = { Name=ColorRim }
+                }
+            }
+            Entries[2] =
+            {
+                ParameterInfos[10] =
+                {
+                    ParameterInfos[0] = { Name=UI_NormalMap Fresnel }
+                    ParameterInfos[1] = { Name=Roughness }
+                    ParameterInfos[2] = { Name=ORM }
+                    ParameterInfos[3] = { Name=Emissive }
+                    ParameterInfos[4] = { Name=Normal }
+                    ParameterInfos[5] = { Name=Occlusion }
+                    ParameterInfos[6] = { Name=Mask }
+                    ParameterInfos[7] = { Name=NormalMap Fresnel }
+                    ParameterInfos[8] = { Name=LocalPlayerSceneDepth }
+                    ParameterInfos[9] = { Name=BaseColor }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[46] =
+        {
+            ScalarValues[0] = 1
+            ScalarValues[1] = 2
+            ScalarValues[2] = 1
+            ScalarValues[3] = 1
+            ScalarValues[4] = 180
+            ScalarValues[5] = 0
+            ScalarValues[6] = 0.6
+            ScalarValues[7] = 0
+            ScalarValues[8] = 1
+            ScalarValues[9] = 1
+            ScalarValues[10] = 0
+            ScalarValues[11] = 1
+            ScalarValues[12] = 0
+            ScalarValues[13] = 1
+            ScalarValues[14] = 1
+            ScalarValues[15] = 0
+            ScalarValues[16] = 0
+            ScalarValues[17] = 1
+            ScalarValues[18] = 0
+            ScalarValues[19] = 0
+            ScalarValues[20] = 0
+            ScalarValues[21] = 0.6
+            ScalarValues[22] = 45
+            ScalarValues[23] = 1
+            ScalarValues[24] = 0
+            ScalarValues[25] = 0
+            ScalarValues[26] = 0.5
+            ScalarValues[27] = 0
+            ScalarValues[28] = 0
+            ScalarValues[29] = 0
+            ScalarValues[30] = 1
+            ScalarValues[31] = 1
+            ScalarValues[32] = 5
+            ScalarValues[33] = 45
+            ScalarValues[34] = 0.6
+            ScalarValues[35] = 0
+            ScalarValues[36] = 0
+            ScalarValues[37] = 0.2
+            ScalarValues[38] = 1
+            ScalarValues[39] = 0.2
+            ScalarValues[40] = 1
+            ScalarValues[41] = 1
+            ScalarValues[42] = 1
+            ScalarValues[43] = 180
+            ScalarValues[44] = 0.5
+            ScalarValues[45] = 1
+        }
+        VectorValues[22] =
+        {
+            VectorValues[0] = { R=0.2, G=0.2, B=0.2, A=1 }
+            VectorValues[1] = { R=1, G=0, B=0, A=1 }
+            VectorValues[2] = { R=2, G=2, B=1.5, A=1 }
+            VectorValues[3] = { R=0, G=1, B=0.5, A=1 }
+            VectorValues[4] = { R=1, G=0.5, B=0.1, A=1 }
+            VectorValues[5] = { R=0, G=0.1, B=0, A=1 }
+            VectorValues[6] = { R=1, G=1, B=1, A=0 }
+            VectorValues[7] = { R=1, G=1, B=1, A=1 }
+            VectorValues[8] = { R=0, G=0.5, B=1, A=1 }
+            VectorValues[9] = { R=0.1, G=0.1, B=0.1, A=1 }
+            VectorValues[10] = { R=0.2, G=0, B=1, A=1 }
+            VectorValues[11] = { R=1, G=0.4, B=0, A=1 }
+            VectorValues[12] = { R=1.5, G=1, B=0.25, A=1 }
+            VectorValues[13] = { R=0.395, G=0.550799, B=1, A=1 }
+            VectorValues[14] = { R=1, G=0.833333, B=0, A=1 }
+            VectorValues[15] = { R=1, G=0.166667, B=0, A=1 }
+            VectorValues[16] = { R=0, G=1, B=0, A=1 }
+            VectorValues[17] = { R=1, G=0, B=0, A=1 }
+            VectorValues[18] = { R=1, G=0.2, B=0, A=1 }
+            VectorValues[19] = { R=1, G=1, B=1, A=0 }
+            VectorValues[20] = { R=1, G=0, B=1, A=1 }
+            VectorValues[21] = { R=0.395, G=0.550799, B=1, A=1 }
+        }
+        TextureValues[10] =
+        {
+            TextureValues[0] = Texture2D'/Game/Panda_Main/Materials/AdvancedFresnelSegment/textures/texNP.texNP'
+            TextureValues[1] = Texture2D'/Game/Panda_Main/Characters/T_BlacknoSRGB.T_BlacknoSRGB'
+            TextureValues[2] = Texture2D'/Game/Panda_Main/Characters/T_BlacknoSRGB.T_BlacknoSRGB'
+            TextureValues[3] = Texture2D'/Game/Panda_Main/Characters/T_Black.T_Black'
+            TextureValues[4] = Texture2D'/Game/Panda_Main/Characters/T_DefaltNM.T_DefaltNM'
+            TextureValues[5] = Texture2D'/Game/Panda_Main/Characters/T_BlacknoSRGB.T_BlacknoSRGB'
+            TextureValues[6] = Texture2D'/Game/Panda_Main/Characters/Garnet/Materials/Garnet_Body_Masks.Garnet_Body_Masks'
+            TextureValues[7] = Texture2D'/Game/Panda_Main/Materials/AdvancedFresnelSegment/textures/texNP.texNP'
+            TextureValues[9] = Texture2D'/Game/Panda_Main/Characters/T_DefaultChecker.T_DefaultChecker'
+        }
+    }
+    ReferencedTextures[10] =
+    {
+        ReferencedTextures[0] = Texture2D'/Engine/EngineMaterials/Good64x64TilingNoiseHighFreq.Good64x64TilingNoiseHighFreq'
+        ReferencedTextures[1] = Texture2D'/Game/Panda_Main/VFX/Textures/T_Noise_Contrast_High_Blurry.T_Noise_Contrast_High_Blurry'
+        ReferencedTextures[2] = Texture2D'/Game/Panda_Main/Characters/T_BlacknoSRGB.T_BlacknoSRGB'
+        ReferencedTextures[3] = Texture2D'/Game/Panda_Main/Characters/T_DefaltNM.T_DefaltNM'
+        ReferencedTextures[4] = Texture2D'/Game/Panda_Main/Characters/T_Black.T_Black'
+        ReferencedTextures[6] = Texture2D'/Game/Panda_Main/Characters/T_DefaultChecker.T_DefaultChecker'
+        ReferencedTextures[7] = Texture2D'/Game/Panda_Main/Materials/AdvancedFresnelSegment/textures/texNP.texNP'
+        ReferencedTextures[9] = Texture2D'/Game/Panda_Main/Characters/Garnet/Materials/Garnet_Body_Masks.Garnet_Body_Masks'
+    }
+}
+BlendMode = BLEND_Masked (1)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[10] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/Panda_Main/Materials/AdvancedFresnelSegment/textures/texNP.texNP'
+        Name = UI_NormalMap Fresnel
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/Panda_Main/Characters/T_BlacknoSRGB.T_BlacknoSRGB'
+        Name = Roughness
+        Group = None
+    }
+    CollectedTextureParameters[2] =
+    {
+        Texture = Texture2D'/Game/Panda_Main/Characters/T_BlacknoSRGB.T_BlacknoSRGB'
+        Name = ORM
+        Group = None
+    }
+    CollectedTextureParameters[3] =
+    {
+        Texture = Texture2D'/Game/Panda_Main/Characters/T_Black.T_Black'
+        Name = Emissive
+        Group = None
+    }
+    CollectedTextureParameters[4] =
+    {
+        Texture = Texture2D'/Game/Panda_Main/Characters/T_DefaltNM.T_DefaltNM'
+        Name = Normal
+        Group = None
+    }
+    CollectedTextureParameters[5] =
+    {
+        Texture = Texture2D'/Game/Panda_Main/Characters/T_BlacknoSRGB.T_BlacknoSRGB'
+        Name = Occlusion
+        Group = None
+    }
+    CollectedTextureParameters[6] =
+    {
+        Texture = Texture2D'/Game/Panda_Main/Characters/Garnet/Materials/Garnet_Body_Masks.Garnet_Body_Masks'
+        Name = Mask
+        Group = None
+    }
+    CollectedTextureParameters[7] =
+    {
+        Texture = Texture2D'/Game/Panda_Main/Materials/AdvancedFresnelSegment/textures/texNP.texNP'
+        Name = NormalMap Fresnel
+        Group = None
+    }
+    CollectedTextureParameters[8] =
+    {
+        Texture = None
+        Name = LocalPlayerSceneDepth
+        Group = None
+    }
+    CollectedTextureParameters[9] =
+    {
+        Texture = Texture2D'/Game/Panda_Main/Characters/T_DefaultChecker.T_DefaultChecker'
+        Name = BaseColor
+        Group = None
+    }
+}
+CollectedScalarParameters[46] =
+{
+    CollectedScalarParameters[0] = { Value=1, Name=BaseColor_Power, Group=None }
+    CollectedScalarParameters[1] = { Value=2, Name=Fresnel, Group=None }
+    CollectedScalarParameters[2] = { Value=1, Name=UI_IntensityRim, Group=None }
+    CollectedScalarParameters[3] = { Value=1, Name=Metallic_Power, Group=None }
+    CollectedScalarParameters[4] = { Value=180, Name=maxAngle, Group=None }
+    CollectedScalarParameters[5] = { Value=0, Name=Emissive_ScrollU, Group=None }
+    CollectedScalarParameters[6] = { Value=0.6, Name=bias, Group=None }
+    CollectedScalarParameters[7] = { Value=0, Name=Desaturation, Group=None }
+    CollectedScalarParameters[8] = { Value=1, Name=Normal_Strength, Group=None }
+    CollectedScalarParameters[9] = { Value=1, Name=OpacityToggle, Group=None }
+    CollectedScalarParameters[10] = { Value=0, Name=Specular, Group=None }
+    CollectedScalarParameters[11] = { Value=1, Name=AmbientOcclusion_Mult, Group=None }
+    CollectedScalarParameters[12] = { Value=0, Name=InvertNormalsAlpha, Group=None }
+    CollectedScalarParameters[13] = { Value=1, Name=Emissive_Color_Mult, Group=None }
+    CollectedScalarParameters[14] = { Value=1, Name=AmbientOcclusion_Power, Group=None }
+    CollectedScalarParameters[15] = { Value=0, Name=Gradient_Curve, Group=None }
+    CollectedScalarParameters[16] = { Value=0, Name=Emissive_ScrollV, Group=None }
+    CollectedScalarParameters[17] = { Value=1, Name=Roughness_Power, Group=None }
+    CollectedScalarParameters[18] = { Value=0, Name=HueShift, Group=None }
+    CollectedScalarParameters[19] = { Value=0, Name=Emissive_OffsetV, Group=None }
+    CollectedScalarParameters[20] = { Value=0, Name=UseEvadeSine, Group=None }
+    CollectedScalarParameters[21] = { Value=0.6, Name=UI_bias, Group=None }
+    CollectedScalarParameters[22] = { Value=45, Name=UI_minAngle, Group=None }
+    CollectedScalarParameters[23] = { Value=1, Name=IntensityRim, Group=None }
+    CollectedScalarParameters[24] = { Value=0, Name=Emissive_OffsetU, Group=None }
+    CollectedScalarParameters[25] = { Value=0, Name=EvadeBlink, Group=None }
+    CollectedScalarParameters[26] = { Value=0.5, Name=EvadeFresnel, Group=None }
+    CollectedScalarParameters[27] = { Value=0, Name=GlowOpacity, Group=None }
+    CollectedScalarParameters[28] = { Value=0, Name=ColorMap, Group=None }
+    CollectedScalarParameters[29] = { Value=0, Name=Glow, Group=None }
+    CollectedScalarParameters[30] = { Value=1, Name=Emissive_Power, Group=None }
+    CollectedScalarParameters[31] = { Value=1, Name=Emissive_Mult, Group=None }
+    CollectedScalarParameters[32] = { Value=5, Name=ColorMap_Mult, Group=None }
+    CollectedScalarParameters[33] = { Value=45, Name=minAngle, Group=None }
+    CollectedScalarParameters[34] =
+    {
+        Value = 0.6
+        Name = AmbientOcclusion_Contrast
+        Group = None
+    }
+    CollectedScalarParameters[35] = { Value=0, Name=Rimlight_Mode, Group=None }
+    CollectedScalarParameters[36] = { Value=0, Name=DepthOffset, Group=None }
+    CollectedScalarParameters[37] = { Value=0.2, Name=eta, Group=None }
+    CollectedScalarParameters[38] = { Value=1, Name=Emissive_ScaleV, Group=None }
+    CollectedScalarParameters[39] = { Value=0.2, Name=UI_eta, Group=None }
+    CollectedScalarParameters[40] = { Value=1, Name=Metallic_Mult, Group=None }
+    CollectedScalarParameters[41] = { Value=1, Name=BaseColor_Mult, Group=None }
+    CollectedScalarParameters[42] = { Value=1, Name=Emissive_ScaleU, Group=None }
+    CollectedScalarParameters[43] = { Value=180, Name=UI_maxAngle, Group=None }
+    CollectedScalarParameters[44] = { Value=0.5, Name=Team, Group=None }
+    CollectedScalarParameters[45] = { Value=1, Name=Roughness_Mult, Group=None }
+}
+CollectedVectorParameters[22] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=0.2, G=0.2, B=0.2, A=1 }
+        Name = ColorDamageStart
+        Group = None
+    }
+    CollectedVectorParameters[1] =
+    {
+        Value = { R=1, G=0, B=0, A=1 }
+        Name = Color4
+        Group = None
+    }
+    CollectedVectorParameters[2] =
+    {
+        Value = { R=2, G=2, B=1.5, A=1 }
+        Name = EvadeColor
+        Group = None
+    }
+    CollectedVectorParameters[3] =
+    {
+        Value = { R=0, G=1, B=0.5, A=1 }
+        Name = Team_LightGreen
+        Group = None
+    }
+    CollectedVectorParameters[4] =
+    {
+        Value = { R=1, G=0.5, B=0.1, A=1 }
+        Name = Team_Yellow
+        Group = None
+    }
+    CollectedVectorParameters[5] =
+    {
+        Value = { R=0, G=0.1, B=0, A=1 }
+        Name = Team_DarkGreen
+        Group = None
+    }
+    CollectedVectorParameters[6] =
+    {
+        Value = { R=1, G=1, B=1, A=0 }
+        Name = Emissive_Color
+        Group = None
+    }
+    CollectedVectorParameters[7] =
+    {
+        Value = { R=1, G=1, B=1, A=1 }
+        Name = Original
+        Group = None
+    }
+    CollectedVectorParameters[8] =
+    {
+        Value = { R=0, G=0.5, B=1, A=1 }
+        Name = Team_Blue
+        Group = None
+    }
+    CollectedVectorParameters[9] =
+    {
+        Value = { R=0.1, G=0.1, B=0.1, A=1 }
+        Name = Team_Black
+        Group = None
+    }
+    CollectedVectorParameters[10] =
+    {
+        Value = { R=0.2, G=0, B=1, A=1 }
+        Name = Team_Purple
+        Group = None
+    }
+    CollectedVectorParameters[11] =
+    {
+        Value = { R=1, G=0.4, B=0, A=1 }
+        Name = Color2
+        Group = None
+    }
+    CollectedVectorParameters[12] =
+    {
+        Value = { R=1.5, G=1, B=0.25, A=1 }
+        Name = GlowColor
+        Group = None
+    }
+    CollectedVectorParameters[13] =
+    {
+        Value = { R=0.395, G=0.550799, B=1, A=1 }
+        Name = UI_ColorRim
+        Group = None
+    }
+    CollectedVectorParameters[14] =
+    {
+        Value = { R=1, G=0.833333, B=0, A=1 }
+        Name = Color
+        Group = None
+    }
+    CollectedVectorParameters[15] =
+    {
+        Value = { R=1, G=0.166667, B=0, A=1 }
+        Name = Color3
+        Group = None
+    }
+    CollectedVectorParameters[16] =
+    {
+        Value = { R=0, G=1, B=0, A=1 }
+        Name = Team_Green
+        Group = None
+    }
+    CollectedVectorParameters[17] =
+    {
+        Value = { R=1, G=0, B=0, A=1 }
+        Name = Team_Red
+        Group = None
+    }
+    CollectedVectorParameters[18] =
+    {
+        Value = { R=1, G=0.2, B=0, A=1 }
+        Name = Team_Orange
+        Group = None
+    }
+    CollectedVectorParameters[19] =
+    {
+        Value = { R=1, G=1, B=1, A=0 }
+        Name = BaseColor
+        Group = None
+    }
+    CollectedVectorParameters[20] =
+    {
+        Value = { R=1, G=0, B=1, A=1 }
+        Name = Team_Pink
+        Group = None
+    }
+    CollectedVectorParameters[21] =
+    {
+        Value = { R=0.395, G=0.550799, B=1, A=1 }
+        Name = ColorRim
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[5] =
+{
+    TextureStreamingData[0] =
+    {
+        SamplingScale = 1
+        UVChannelIndex = 0
+        TextureName = T_Black
+    }
+    TextureStreamingData[1] =
+    {
+        SamplingScale = 1
+        UVChannelIndex = 0
+        TextureName = T_BlacknoSRGB
+    }
+    TextureStreamingData[2] =
+    {
+        SamplingScale = 1
+        UVChannelIndex = 0
+        TextureName = T_DefaltNM
+    }
+    TextureStreamingData[3] =
+    {
+        SamplingScale = 1
+        UVChannelIndex = 0
+        TextureName = T_DefaultChecker
+    }
+    TextureStreamingData[4] =
+    {
+        SamplingScale = 1
+        UVChannelIndex = 0
+        TextureName = T_Noise_Contrast_High_Blurry
+    }
+}

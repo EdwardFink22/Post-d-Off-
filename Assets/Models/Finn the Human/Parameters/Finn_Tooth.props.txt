@@ -1,0 +1,26 @@
+Materials[1] =
+{
+    Materials[0] = MaterialInstanceConstant'/Game/Panda_Main/Characters/Finn/FinnBase_MIC.FinnBase_MIC'
+}
+SourceModels[0] = {}
+StaticMaterials[1] =
+{
+    StaticMaterials[0] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/Panda_Main/Characters/Finn/FinnBase_MIC.FinnBase_MIC'
+        MaterialSlotName = fml_un_rig_v010_Finn_MAT
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 128.257, 9.47951, 0, 0 }
+        }
+    }
+}
+Sockets[0] = {}
+ExtendedBounds =
+{
+    Origin = { X=-1.90735e-06, Y=2.38419e-07, Z=1.52588e-05 }
+    BoxExtent = { X=0.451471, Y=2.30327, Z=2.46214 }
+    SphereRadius = 2.72929
+}
